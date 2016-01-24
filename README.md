@@ -11,3 +11,4 @@ You can:
 - Allocate data into values list and find most frequent (most popular) data values by Sort class. [Read more](docs/arrays/Sort.md)
 
 - etc.
+
