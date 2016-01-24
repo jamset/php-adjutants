@@ -10,9 +10,9 @@ E.g. for arrays: you can group data around certain properties, sort data and det
     "jeronimos/php-adjutants":"@dev"
 }
 ```
-or
+or may execute
 
-composer require jeronimos/php-adjutants
+`composer require jeronimos/php-adjutants`
 
 Please, note that package stability is dev.
 
