@@ -3,6 +3,19 @@ PHP Handlers for specific purposes: handling arrays, objects, strings, etc.
 
 E.g. for arrays: you can group data around certain properties, sort data and detect most frequent values, add up data by properties, etc.
 
+###Composer installation
+
+```json
+"require": {
+    "jeronimos/php-adjutants":"@dev"
+}
+```
+or
+
+composer require jeronimos/php-adjutants
+
+Please, note that package stability is dev.
+
 ###Arrays
 You can: 
 
