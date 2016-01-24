@@ -10,7 +10,7 @@ E.g. for arrays: you can group data around certain properties, sort data and det
     "jeronimos/php-adjutants":"@dev"
 }
 ```
-or may execute
+or you may execute
 
 `composer require jeronimos/php-adjutants`
 
