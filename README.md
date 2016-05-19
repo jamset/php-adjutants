@@ -7,12 +7,12 @@ E.g. for arrays: you can group data around certain properties, sort data and det
 
 ```json
 "require": {
-    "jeronimos/php-adjutants":"@dev"
+    "jamset/php-adjutants":"@dev"
 }
 ```
 or you may execute
 
-`composer require jeronimos/php-adjutants`
+`composer require jamset/php-adjutants`
 
 Please, note that package stability is dev.
 
