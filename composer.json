@@ -1,17 +1,18 @@
 {
-  "name": "jeronimos/php-adjutants",
+  "name": "jamset/php-adjutants",
   "description": "Adjutants for specific processing arrays, numbers, strings",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "Jeronimos Muente",
-      "email": "jeronimosmuen@gmail.com"
+      "name": "Jam Set",
+      "email": "jamset@joinger.org"
     }
   ],
   "minimum-stability": "dev",
   "require": {
-    "php": ">=5.5.0"
+    "php": ">=5.5.0",
+    "monolog/monolog": "^1.19"
   },
   "autoload": {
     "psr-4": {
@@ -19,6 +20,3 @@
     }
   }
 }
-
-
-
