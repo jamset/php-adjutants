@@ -12,7 +12,9 @@
   "minimum-stability": "dev",
   "require": {
     "php": ">=5.5.0",
-    "monolog/monolog": "^1.19"
+    "monolog/monolog": "^1.19",
+    "nesbot/carbon": "~1.14",
+    "jamset/inventory_basic": "dev-master"
   },
   "autoload": {
     "psr-4": {
