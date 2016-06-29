@@ -9,12 +9,11 @@
       "email": "jamset@joinger.org"
     }
   ],
-  "minimum-stability": "dev",
   "require": {
     "php": ">=5.5.0",
     "monolog/monolog": "^1.19",
     "nesbot/carbon": "~1.14",
-    "jamset/inventory_basic": "dev-master"
+    "jamset/inventory_basic": "*"
   },
   "autoload": {
     "psr-4": {
