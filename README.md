@@ -7,7 +7,7 @@ E.g. for arrays: you can group data around certain properties, sort data and det
 
 ```json
 "require": {
-    "jamset/php-adjutants":"@dev"
+    "jamset/php-adjutants":"*"
 }
 ```
 or you may execute
