@@ -5,15 +5,14 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Jam Set",
-      "email": "jamset@joinger.org"
+      "name": "Jam Set"
     }
   ],
   "require": {
     "php": ">=5.5.0",
     "monolog/monolog": "^1.19",
     "nesbot/carbon": "~1.14",
-    "jamset/inventory_basic": "*"
+    "jamset/inventory_basic": "^0"
   },
   "autoload": {
     "psr-4": {
