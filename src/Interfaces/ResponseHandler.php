@@ -15,5 +15,10 @@ interface ResponseHandler
      */
     public function makeSuccessfulResponse();
 
+    /**
+     * @return mixed
+     */
+    public function makeErrorResponse();
+
 
 }
