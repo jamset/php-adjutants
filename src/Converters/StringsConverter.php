@@ -5,7 +5,7 @@
  * Date: 09.10.16
  * Time: 20:17
  */
-namespace K50\Adjutants\Converters;
+namespace Adjutants\Converters;
 
 class StringsConverter
 {

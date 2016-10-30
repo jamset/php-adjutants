@@ -5,13 +5,13 @@
  * Date: 07.07.15
  * Time: 0:59
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\Exceptions\GroupException;
-use AdjutantHandlers\Arrays\Inventory\GroupConsts;
-use AdjutantHandlers\Arrays\Inventory\GroupData;
-use AdjutantHandlers\Arrays\Inventory\KeeperData;
-use AdjutantHandlers\Arrays\Inventory\SortData;
+use Adjutants\Arrays\Inventory\Exceptions\GroupException;
+use Adjutants\Arrays\Inventory\GroupConsts;
+use Adjutants\Arrays\Inventory\GroupData;
+use Adjutants\Arrays\Inventory\KeeperData;
+use Adjutants\Arrays\Inventory\SortData;
 
 class Group
 {

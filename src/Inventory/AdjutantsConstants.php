@@ -5,25 +5,26 @@
  * Date: 08.09.16
  * Time: 20:26
  */
-namespace K50\Adjutants\Inventory;
+namespace Adjutants\Inventory;
 
 abstract class AdjutantsConstants
 {
     /*
-    * _c - camelCase
-    * _s - snake_case
-    * _l - lower
-    * _n - natural language (more than one word)
-    * _i - integer
-    * _ucf - upper case first letter
-    * _dot - dot.case
-    *
-    * _p - PascalCase
-    *
-    * _c_m - camelCase, modified (more than one difference from standard camelCase) like Bundle:EntityName
-    *
-    * without - UPPER_CASE
-    * */
+        * _c - camelCase
+        * _s - snake_case
+        * _l - lower
+        * _n - natural language (more than one word)
+        * _i - integer
+        * _i_str - integer-string, i.e. '127.0.0.1'
+        * _ucf - upper case first letter
+        * _dot - dot.case
+        *
+        * _p - PascalCase
+        *
+        * _c_m - camelCase, modified (more than one difference from standard camelCase) like Bundle:EntityName
+        *
+        * without - UPPER_CASE
+        * */
 
     const ASC = 'ASC';
     const DESC = 'DESC';
@@ -70,5 +71,9 @@ abstract class AdjutantsConstants
     const ID_l = 'id';
     const IS_DEFAULT_p = 'IsDefault';
     const IS_VISIBLE_p = 'IsVisible';
+
+    const LOCALHOST_ADDRESS_i_str = '127.0.0.1';
+    const PORT_NUMBER_s = 'port_number';
+    const FREE = 'FREE';
 
 }

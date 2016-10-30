@@ -5,10 +5,10 @@
  * Date: 29.09.16
  * Time: 22:14
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificResolverDto;
+use Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
+use Adjutants\Abstracts\Inventory\BaseNonspecificResolverDto;
 
 interface NonspecificResolver
 {

@@ -5,7 +5,7 @@
  * Date: 24.10.15
  * Time: 13:48
  */
-namespace AdjutantHandlers\Objects;
+namespace Adjutants\Objects;
 
 use Monolog\Logger;
 

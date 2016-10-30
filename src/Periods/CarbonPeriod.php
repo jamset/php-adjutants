@@ -5,7 +5,7 @@
  * Date: 30.10.15
  * Time: 23:49
  */
-namespace AdjutantHandlers\Periods;
+namespace Adjutants\Periods;
 
 use Carbon\Carbon;
 

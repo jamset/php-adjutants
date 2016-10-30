@@ -5,7 +5,7 @@
  * Date: 15.08.16
  * Time: 16:26
  */
-namespace AdjutantHandlers\Strings;
+namespace Adjutants\Strings;
 
 class HandleString
 {

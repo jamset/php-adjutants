@@ -5,7 +5,7 @@
  * Date: 14.10.16
  * Time: 21:26
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 interface ResponseHandler
 {

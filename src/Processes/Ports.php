@@ -5,13 +5,13 @@
  * Date: 17.01.16
  * Time: 20:06
  */
-namespace AdjutantHandlers\Processes;
+namespace Adjutants\Processes;
 
-use AdjutantHandlers\Inventory\AdjutantConstants;
-use AdjutantHandlers\Processes\Interfaces\PortsModelInterface;
-use AdjutantHandlers\Processes\Inventory\Exceptions\ProcessesException;
-use AdjutantHandlers\Processes\Inventory\Models\LaravelPortsModel;
-use AdjutantHandlers\Processes\Inventory\ProcessesConstants;
+use Adjutants\Inventory\AdjutantConstants;
+use Adjutants\Processes\Interfaces\PortsModelInterface;
+use Adjutants\Processes\Inventory\Exceptions\ProcessesException;
+use Adjutants\Processes\Inventory\Models\LaravelPortsModel;
+use Adjutants\Processes\Inventory\ProcessesConstants;
 use FractalBasic\Inventory\CommonConstants;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;

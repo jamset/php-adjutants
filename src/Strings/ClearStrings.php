@@ -1,5 +1,5 @@
 <?php
-namespace AdjutantHandlers\Strings;
+namespace Adjutants\Strings;
 
 class ClearStrings
 {

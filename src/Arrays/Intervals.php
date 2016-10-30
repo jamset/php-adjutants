@@ -5,10 +5,10 @@
  * Date: 05.11.15
  * Time: 1:56
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\Exceptions\IntervalsInvalidArgument;
-use AdjutantHandlers\Arrays\Inventory\IntervalsDto;
+use Adjutants\Arrays\Inventory\Exceptions\IntervalsInvalidArgument;
+use Adjutants\Arrays\Inventory\IntervalsDto;
 
 class Intervals
 {

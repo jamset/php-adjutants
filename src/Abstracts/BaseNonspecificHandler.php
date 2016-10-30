@@ -5,10 +5,10 @@
  * Date: 01.10.16
  * Time: 20:14
  */
-namespace K50\Adjutants\Abstracts;
+namespace Adjutants\Abstracts;
 
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
-use K50\Adjutants\Interfaces\NonspecificHandler;
+use Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
+use Adjutants\Interfaces\NonspecificHandler;
 
 abstract class BaseNonspecificHandler extends BaseScript implements NonspecificHandler
 {

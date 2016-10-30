@@ -5,7 +5,7 @@
  * Date: 14.10.16
  * Time: 17:57
  */
-namespace K50\Adjutants\Collections;
+namespace Adjutants\Collections;
 
 use Doctrine\Common\Collections\Collection;
 

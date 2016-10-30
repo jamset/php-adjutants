@@ -5,10 +5,10 @@
  * Date: 11.10.16
  * Time: 16:44
  */
-namespace K50\Adjutants\Abstracts;
+namespace Adjutants\Abstracts;
 
-use AdjutantHandlers\Strings\HandleString;
-use K50\Adjutants\Strings\NotificationsHandler;
+use Adjutants\Strings\HandleString;
+use Adjutants\Strings\NotificationsHandler;
 use Monolog\Logger;
 
 class BaseScript

@@ -5,9 +5,9 @@
  * Date: 25.10.15
  * Time: 10:34
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\Exceptions\ArraysCommonInvalidArgument;
+use Adjutants\Arrays\Inventory\Exceptions\ArraysCommonInvalidArgument;
 
 class ArraysCommon
 {

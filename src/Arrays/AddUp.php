@@ -5,10 +5,10 @@
  * Date: 04.07.15
  * Time: 21:30
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\AddUpData;
-use AdjutantHandlers\Arrays\Inventory\KeeperData;
+use Adjutants\Arrays\Inventory\AddUpData;
+use Adjutants\Arrays\Inventory\KeeperData;
 
 class AddUp
 {

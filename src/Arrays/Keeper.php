@@ -5,9 +5,9 @@
  * Date: 07.07.15
  * Time: 2:25
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\KeeperData;
+use Adjutants\Arrays\Inventory\KeeperData;
 
 class Keeper
 {

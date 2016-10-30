@@ -6,7 +6,7 @@
  * Time: 22:45
  */
 
-namespace AdjutantHandlers\Arrays\Inventory\Exceptions;
+namespace Adjutants\Arrays\Inventory\Exceptions;
 
 class GroupException extends \Exception
 {

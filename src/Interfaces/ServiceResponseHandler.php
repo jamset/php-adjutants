@@ -5,7 +5,7 @@
  * Date: 15.10.16
  * Time: 20:02
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 interface ServiceResponseHandler
 {

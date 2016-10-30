@@ -5,7 +5,7 @@
  * Date: 14.10.16
  * Time: 20:22
  */
-namespace K50\Adjutants\Http\Inventory\Constants;
+namespace Adjutants\Http\Inventory\Constants;
 
 class HttpConstants
 {

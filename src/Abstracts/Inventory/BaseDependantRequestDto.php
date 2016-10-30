@@ -5,7 +5,7 @@
  * Date: 29.09.16
  * Time: 22:20
  */
-namespace K50\Adjutants\Abstracts\Inventory;
+namespace Adjutants\Abstracts\Inventory;
 
 use Symfony\Component\HttpFoundation\Request;
 

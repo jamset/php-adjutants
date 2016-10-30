@@ -5,10 +5,10 @@
  * Date: 11.04.15
  * Time: 17:48
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\Exceptions\JsonException;
-use AdjutantHandlers\Arrays\Inventory\Exceptions\RestructureException;
+use Adjutants\Arrays\Inventory\Exceptions\JsonException;
+use Adjutants\Arrays\Inventory\Exceptions\RestructureException;
 
 class Restructure
 {

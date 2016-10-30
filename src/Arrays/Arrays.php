@@ -5,9 +5,9 @@
  * Date: 01.09.15
  * Time: 18:24
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\Exceptions\ArraysException;
+use Adjutants\Arrays\Inventory\Exceptions\ArraysException;
 
 class Arrays
 {

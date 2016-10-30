@@ -5,7 +5,7 @@
  * Date: 06.07.15
  * Time: 17:51
  */
-namespace AdjutantHandlers\Arrays\Inventory;
+namespace Adjutants\Arrays\Inventory;
 
 class AddUpData
 {

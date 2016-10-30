@@ -5,7 +5,7 @@
  * Date: 17.12.15
  * Time: 22:14
  */
-namespace AdjutantHandlers\Mixed;
+namespace Adjutants\Mixed;
 
 class CheckJson
 {

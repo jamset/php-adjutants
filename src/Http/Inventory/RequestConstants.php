@@ -5,7 +5,7 @@
  * Date: 12.09.16
  * Time: 19:29
  */
-namespace K50\Adjutants\Http\Inventory;
+namespace Adjutants\Http\Inventory;
 
 class RequestConstants
 {

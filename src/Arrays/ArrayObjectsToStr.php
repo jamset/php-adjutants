@@ -1,5 +1,5 @@
 <?php
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
 class ArrayObjectsToStr
 {

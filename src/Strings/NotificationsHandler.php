@@ -5,7 +5,7 @@
  * Date: 02.09.16
  * Time: 15:08
  */
-namespace K50\Adjutants\Strings;
+namespace Adjutants\Strings;
 
 class NotificationsHandler
 {

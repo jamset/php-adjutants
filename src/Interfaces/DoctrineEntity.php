@@ -5,7 +5,7 @@
  * Date: 09.10.16
  * Time: 21:44
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 interface DoctrineEntity
 {

@@ -5,11 +5,11 @@
  * Date: 08.09.16
  * Time: 20:12
  */
-namespace K50\Adjutants\Sorting;
+namespace Adjutants\Sorting;
 
-use K50\Adjutants\Inventory\AdjutantsConstants;
-use K50\Adjutants\Sorting\Inventory\Exceptions\SorterException;
-use K50\Adjutants\Sorting\Inventory\Exceptions\SorterInvalidArgumentException;
+use Adjutants\Inventory\AdjutantsConstants;
+use Adjutants\Sorting\Inventory\Exceptions\SorterException;
+use Adjutants\Sorting\Inventory\Exceptions\SorterInvalidArgumentException;
 
 class HierarchicalSorter
 {

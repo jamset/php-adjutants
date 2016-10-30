@@ -5,7 +5,7 @@
  * Date: 18.10.16
  * Time: 17:04
  */
-namespace K50\Adjutants\Inventory;
+namespace Adjutants\Inventory;
 
 class SQLConstants
 {

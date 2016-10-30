@@ -5,7 +5,7 @@
  * Date: 02.09.16
  * Time: 15:44
  */
-namespace K50\Adjutants\Inventory;
+namespace Adjutants\Inventory;
 
 abstract class LogsConstants
 {

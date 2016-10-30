@@ -5,7 +5,7 @@
  * Date: 13.09.15
  * Time: 19:34
  */
-namespace AdjutantHandlers\Strings;
+namespace Adjutants\Strings;
 
 class ReformatString
 {

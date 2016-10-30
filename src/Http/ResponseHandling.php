@@ -5,10 +5,10 @@
  * Date: 12.09.16
  * Time: 19:51
  */
-namespace K50\Adjutants\Http;
+namespace Adjutants\Http;
 
-use K50\Adjutants\Http\Inventory\Constants\HttpConstants;
-use K50\Adjutants\Inventory\AdjutantsConstants;
+use Adjutants\Http\Inventory\Constants\HttpConstants;
+use Adjutants\Inventory\AdjutantsConstants;
 use Symfony\Component\HttpFoundation\Response;
 
 class ResponseHandling

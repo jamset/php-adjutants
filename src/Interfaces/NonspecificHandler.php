@@ -5,9 +5,9 @@
  * Date: 29.09.16
  * Time: 22:19
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
+use Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
 
 interface NonspecificHandler
 {

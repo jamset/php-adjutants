@@ -5,7 +5,7 @@
  * Date: 23.08.15
  * Time: 15:07
  */
-namespace AdjutantHandlers\Objects\DataInit\Inventory\Exceptions;
+namespace Adjutants\Objects\DataInit\Inventory\Exceptions;
 
 class DataInitializerException extends \Exception
 {

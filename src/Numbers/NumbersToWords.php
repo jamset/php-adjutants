@@ -5,7 +5,7 @@
  * Date: 26.07.15
  * Time: 6:16
  */
-namespace AdjutantHandlers\Numbers;
+namespace Adjutants\Numbers;
 
 class NumbersToWords
 {

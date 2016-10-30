@@ -6,7 +6,7 @@
  * Time: 1:09
  */
 
-namespace AdjutantHandlers\Converters;
+namespace Adjutants\Converters;
 
 class ToBoolean
 {

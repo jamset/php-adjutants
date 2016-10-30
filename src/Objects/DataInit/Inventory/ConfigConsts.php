@@ -5,7 +5,7 @@
  * Date: 21.08.15
  * Time: 18:47
  */
-namespace AdjutantHandlers\Objects\DataInit\Inventory;
+namespace Adjutants\Objects\DataInit\Inventory;
 
 class ConfigConsts
 {

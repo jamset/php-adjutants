@@ -5,7 +5,7 @@
  * Date: 05.11.15
  * Time: 1:57
  */
-namespace AdjutantHandlers\Arrays\Inventory;
+namespace Adjutants\Arrays\Inventory;
 
 class IntervalsDto
 {

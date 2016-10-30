@@ -5,13 +5,13 @@
  * Date: 15.01.16
  * Time: 20:15
  */
-namespace AdjutantHandlers\Processes\Inventory\Models;
+namespace Adjutants\Processes\Inventory\Models;
 
-use AdjutantHandlers\Processes\Interfaces\PortsModelInterface;
+use Adjutants\Processes\Interfaces\PortsModelInterface;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * AdjutantHandlers\Processes\Inventory\Models\LaravelPortsModel
+ * Adjutants\Processes\Inventory\Models\LaravelPortsModel
  *
  */
 class LaravelPortsModel extends Model implements PortsModelInterface

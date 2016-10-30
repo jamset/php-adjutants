@@ -5,10 +5,10 @@
  * Date: 21.08.15
  * Time: 18:44
  */
-namespace AdjutantHandlers\Objects\DataInit;
+namespace Adjutants\Objects\DataInit;
 
-use AdjutantHandlers\Objects\DataInit\Inventory\Exceptions\ConfigException;
-use AdjutantHandlers\Objects\DataInit\Inventory\ConfigConsts;
+use Adjutants\Objects\DataInit\Inventory\Exceptions\ConfigException;
+use Adjutants\Objects\DataInit\Inventory\ConfigConsts;
 
 class ConfigResolver
 {

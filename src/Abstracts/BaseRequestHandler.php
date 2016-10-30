@@ -5,11 +5,11 @@
  * Date: 11.10.16
  * Time: 16:28
  */
-namespace K50\Adjutants\Abstracts;
+namespace Adjutants\Abstracts;
 
-use K50\Adjutants\Http\Inventory\Constants\HttpConstants;
-use K50\Adjutants\Interfaces\RequestHandler;
-use K50\Adjutants\Interfaces\ResponseHandler;
+use Adjutants\Http\Inventory\Constants\HttpConstants;
+use Adjutants\Interfaces\RequestHandler;
+use Adjutants\Interfaces\ResponseHandler;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

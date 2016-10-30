@@ -5,11 +5,11 @@
  * Date: 21.08.15
  * Time: 16:59
  */
-namespace AdjutantHandlers\Objects\DataInit;
+namespace Adjutants\Objects\DataInit;
 
-use AdjutantHandlers\Objects\DataInit\Abstr\BasicDataKeeper;
-use AdjutantHandlers\Objects\DataInit\Interfaces\BasicConfigHandler;
-use AdjutantHandlers\Objects\DataInit\Inventory\Exceptions\DataInitializerException;
+use Adjutants\Objects\DataInit\Abstr\BasicDataKeeper;
+use Adjutants\Objects\DataInit\Interfaces\BasicConfigHandler;
+use Adjutants\Objects\DataInit\Inventory\Exceptions\DataInitializerException;
 
 class DataInitializer
 {

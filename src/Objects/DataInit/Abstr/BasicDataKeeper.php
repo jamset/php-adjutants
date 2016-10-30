@@ -5,7 +5,7 @@
  * Date: 21.08.15
  * Time: 18:37
  */
-namespace AdjutantHandlers\Objects\DataInit\Abstr;
+namespace Adjutants\Objects\DataInit\Abstr;
 
 abstract class BasicDataKeeper
 {

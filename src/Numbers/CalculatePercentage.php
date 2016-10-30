@@ -1,5 +1,5 @@
 <?php
-namespace AdjutantHandlers\Numbers;
+namespace Adjutants\Numbers;
 
 
 class CalculatePercentage

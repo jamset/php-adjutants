@@ -5,7 +5,7 @@
  * Date: 12.10.16
  * Time: 20:59
  */
-namespace K50\Adjutants\Abstracts;
+namespace Adjutants\Abstracts;
 
 abstract class BaseConstants
 {

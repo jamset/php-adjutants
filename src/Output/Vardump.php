@@ -5,7 +5,7 @@
  * Date: 08.04.15
  * Time: 20:52
  */
-namespace AdjutantHandlers\Output;
+namespace Adjutants\Output;
 
 
 class Vardump

@@ -5,7 +5,7 @@
  * Date: 12.09.16
  * Time: 19:02
  */
-namespace K50\Adjutants\Http;
+namespace Adjutants\Http;
 
 use Symfony\Component\HttpFoundation\Request;
 

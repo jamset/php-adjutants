@@ -5,7 +5,7 @@
  * Date: 05.11.15
  * Time: 1:58
  */
-namespace AdjutantHandlers\Arrays\Inventory\Exceptions;
+namespace Adjutants\Arrays\Inventory\Exceptions;
 
 class IntervalsInvalidArgument extends \InvalidArgumentException
 {

@@ -5,7 +5,7 @@
  * Date: 19.10.16
  * Time: 23:11
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 interface AutoIncrementedEntity
 {

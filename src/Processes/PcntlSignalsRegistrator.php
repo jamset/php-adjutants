@@ -5,9 +5,9 @@
  * Date: 10.11.15
  * Time: 21:44
  */
-namespace AdjutantHandlers\Processes;
+namespace Adjutants\Processes;
 
-use AdjutantHandlers\Processes\Interfaces\SignalsExecutor;
+use Adjutants\Processes\Interfaces\SignalsExecutor;
 
 class PcntlSignalsRegistrator
 {

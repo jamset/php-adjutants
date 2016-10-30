@@ -5,9 +5,9 @@
  * Date: 22.06.15
  * Time: 15:00
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
-use AdjutantHandlers\Arrays\Inventory\SortData;
+use Adjutants\Arrays\Inventory\SortData;
 
 class Sort
 {

@@ -5,7 +5,7 @@
  * Date: 28.07.15
  * Time: 10:02
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
 class MakeUnique
 {

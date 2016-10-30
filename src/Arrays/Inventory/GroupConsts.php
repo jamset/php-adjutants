@@ -5,7 +5,7 @@
  * Date: 05.08.15
  * Time: 0:09
  */
-namespace AdjutantHandlers\Arrays\Inventory;
+namespace Adjutants\Arrays\Inventory;
 
 class GroupConsts
 {

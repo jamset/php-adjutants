@@ -5,7 +5,7 @@
  * Date: 29.06.15
  * Time: 6:07
  */
-namespace AdjutantHandlers\Arrays\Inventory;
+namespace Adjutants\Arrays\Inventory;
 
 class SortData
 {

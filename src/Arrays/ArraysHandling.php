@@ -5,7 +5,7 @@
  * Date: 13.09.16
  * Time: 20:47
  */
-namespace K50\Adjutants\Arrays;
+namespace Adjutants\Arrays;
 
 class ArraysHandling
 {

@@ -5,7 +5,7 @@
  * Date: 11.10.16
  * Time: 18:52
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 interface EntitiesHandler
 {

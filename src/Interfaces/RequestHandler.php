@@ -5,7 +5,7 @@
  * Date: 11.10.16
  * Time: 16:39
  */
-namespace K50\Adjutants\Interfaces;
+namespace Adjutants\Interfaces;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

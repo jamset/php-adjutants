@@ -5,7 +5,7 @@
  * Date: 17.01.16
  * Time: 20:08
  */
-namespace AdjutantHandlers\Processes\Inventory;
+namespace Adjutants\Processes\Inventory;
 
 class ProcessesConstants
 {

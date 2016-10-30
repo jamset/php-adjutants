@@ -5,7 +5,7 @@
  * Date: 17.01.16
  * Time: 20:15
  */
-namespace AdjutantHandlers\Processes\Interfaces;
+namespace Adjutants\Processes\Interfaces;
 
 interface PortsModelInterface
 {

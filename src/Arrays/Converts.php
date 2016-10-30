@@ -5,7 +5,7 @@
  * Date: 27.11.15
  * Time: 1:45
  */
-namespace AdjutantHandlers\Arrays;
+namespace Adjutants\Arrays;
 
 class Converts
 {

@@ -5,11 +5,11 @@
  * Date: 01.10.16
  * Time: 20:14
  */
-namespace K50\Adjutants\Abstracts;
+namespace Adjutants\Abstracts;
 
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
-use K50\Adjutants\Abstracts\Inventory\BaseNonspecificResolverDto;
-use K50\Adjutants\Interfaces\NonspecificResolver;
+use Adjutants\Abstracts\Inventory\BaseNonspecificHandlerDto;
+use Adjutants\Abstracts\Inventory\BaseNonspecificResolverDto;
+use Adjutants\Interfaces\NonspecificResolver;
 
 abstract class BaseNonspecificResolver extends BaseScript implements NonspecificResolver
 {

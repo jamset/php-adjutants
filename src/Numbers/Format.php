@@ -5,7 +5,7 @@
  * Date: 09.07.15
  * Time: 18:12
  */
-namespace AdjutantHandlers\Numbers;
+namespace Adjutants\Numbers;
 
 class Format
 {

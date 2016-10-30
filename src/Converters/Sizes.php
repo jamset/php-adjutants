@@ -5,7 +5,7 @@
  * Date: 12.01.16
  * Time: 21:14
  */
-namespace AdjutantHandlers\Converters;
+namespace Adjutants\Converters;
 
 class Sizes
 {
