@@ -12,6 +12,7 @@ class HttpConstants
     const NOT_FOUND_i = 404;
     const OK_i = 200;
     const BAD_REQUEST_i = 400;
+    const responseText_c = 'responseText';
 
 
 }
