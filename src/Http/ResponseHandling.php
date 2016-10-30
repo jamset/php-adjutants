@@ -29,11 +29,10 @@ class ResponseHandling
     public static function getStandardJsonBadResponse()
     {
         return new JsonResponse(
-            json_encode(
                 [
                     AdjutantsConstants::STATUS_l => false,
                     AdjutantsConstants::MESSAGE_l => AdjutantsConstants::NOT_FOUND_n
-                ]), HttpConstants::NOT_FOUND_i
+                ], HttpConstants::NOT_FOUND_i
         );
     }
 
