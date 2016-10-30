@@ -9,7 +9,7 @@ namespace Adjutants\Http;
 
 use Adjutants\Http\Inventory\Constants\HttpConstants;
 use Adjutants\Inventory\AdjutantsConstants;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class ResponseHandling
 {
@@ -24,11 +24,11 @@ class ResponseHandling
     protected static $errorMessage;
 
     /**
-     * @return Response
+     * @return JsonResponse
      */
     public static function getStandardJsonBadResponse()
     {
-        return new Response(
+        return new JsonResponse(
             json_encode(
                 [
                     AdjutantsConstants::STATUS_l => false,
@@ -38,7 +38,7 @@ class ResponseHandling
     }
 
     /**
-     * @return string
+     * @return array
      */
     public static function formErrorContent()
     {
@@ -48,68 +48,7 @@ class ResponseHandling
             AdjutantsConstants::MESSAGE_l => self::getErrorMessage()
         ];
 
-       return json_encode($errorContent);
-    }
-
-    /**
-     * @param Response $response
-     * @param $message
-     * @return array
-     */
-    public static function setResponseMessageArrayElement(Response $response, $message)
-    {
-        $responseContent = self::verifyResponseContentType($response->getContent());
-
-        self::checkResponseSettingElementArgumentType(AdjutantsConstants::STRING_l, $message);
-
-        $responseContent[AdjutantsConstants::MESSAGE_l] = $message;
-
-        return $responseContent;
-    }
-
-    /**
-     * @param Response $response
-     * @param $status
-     * @return array
-     */
-    public static function setResponseStatusArrayElement(Response $response, $status)
-    {
-        $responseContent = self::verifyResponseContentType($response->getContent());
-
-        self::checkResponseSettingElementArgumentType(AdjutantsConstants::BOOL_l, $status);
-
-        $responseContent[AdjutantsConstants::STATUS_l] = $status;
-
-        return $responseContent;
-    }
-
-    /**
-     * @param $responseContent
-     * @return array
-     */
-    protected static function verifyResponseContentType($responseContent)
-    {
-        if(!is_array(json_decode($responseContent))){
-            $responseContent = [];
-        }
-
-        return $responseContent;
-    }
-
-    /**
-     * @param $type
-     * @param $argument
-     * @return null
-     */
-    protected static function checkResponseSettingElementArgumentType($type, $argument)
-    {
-        $typeFunction = "is_$type";
-
-        if(!$typeFunction($argument)){
-            throw new \InvalidArgumentException(serialize($argument));
-        }
-
-        return null;
+       return $errorContent;
     }
 
     /**
