@@ -18,24 +18,6 @@ interface RequestHandler
      */
     public function handleRequest();
 
-    /**
-     * @return Response
-     */
-    public function getResponse();
 
-    /**
-     * @param Response $response
-     */
-    public function setResponse(Response $response);
-
-    /**
-     * @return Request
-     */
-    public function getRequest();
-
-    /**
-     * @param Request $request
-     */
-    public function setRequest(Request $request);
 
 }

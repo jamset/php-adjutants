@@ -15,4 +15,9 @@ interface ServiceResponseHandler
      */
     public function makeSuccessfulServiceResponse();
 
+    /**
+     * @return mixed
+     */
+    public function makeErrorServiceResponse();
+
 }

@@ -11,7 +11,7 @@ use Adjutants\Interfaces\EntitiesHandler;
 use Adjutants\Interfaces\RequestHandler;
 use Adjutants\Interfaces\ServiceResponseHandler;
 
-abstract class BaseService implements RequestHandler, EntitiesHandler, ServiceResponseHandler
+abstract class BaseService implements RequestHandler, ServiceResponseHandler
 {
 
 

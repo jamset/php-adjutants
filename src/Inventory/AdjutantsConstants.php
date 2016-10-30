@@ -76,4 +76,11 @@ abstract class AdjutantsConstants
     const PORT_NUMBER_s = 'port_number';
     const FREE = 'FREE';
 
+    const HOST_l = 'host';
+    const STYLE_l = 'style';
+    const SSCROLL_l = 'sscroll';
+    const MAIL_LISTS_ID_c = 'mailListsId';
+    const LIGHT_l = 'light';
+    const CHANGE_LOADING_GIF_c = 'changeLoadingGif';
+
 }
