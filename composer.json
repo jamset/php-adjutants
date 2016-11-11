@@ -12,7 +12,8 @@
     "php": ">=5.5.0",
     "monolog/monolog": "^1.19",
     "nesbot/carbon": "~1.14",
-    "jamset/inventory_basic": "^0"
+    "jamset/inventory_basic": "^0",
+    "symfony/http-foundation": "3.1.6"
   },
   "autoload": {
     "psr-4": {
