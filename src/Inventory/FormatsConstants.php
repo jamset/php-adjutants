@@ -10,7 +10,9 @@ namespace Adjutants\Inventory;
 class FormatsConstants
 {
     const XML = 'XML';
+    const XML_ucf = 'Xml';
     const JSON = 'JSON';
+    const JSON_ucf = 'Json';
 
 
 }
