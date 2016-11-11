@@ -7,6 +7,8 @@
  */
 namespace Adjutants\Strings;
 
+use Adjutants\Inventory\AdjutantsConstants;
+
 class NotificationsHandler
 {
     /**
@@ -26,4 +28,12 @@ class NotificationsHandler
         return $scriptDesignation . ", $notificationIdPart" . "data: " . serialize($notificationData);
     }
 
+    /**
+     * @param $parameterName
+     * @return string
+     */
+    public static function parameterCanNotBeEmpty($parameterName)
+    {
+        return AdjutantsConstants::PARAMETER_ucf .'\''.$parameterName.'\''." ".AdjutantsConstants::CAN_NOT_BE_EMPTY_n;
+    }
 }
