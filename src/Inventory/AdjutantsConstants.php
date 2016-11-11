@@ -83,4 +83,8 @@ abstract class AdjutantsConstants
     const LIGHT_l = 'light';
     const CHANGE_LOADING_GIF_c = 'changeLoadingGif';
 
+    const FROM_l = 'from';
+    const TO_l = 'to';
+    const AMOUNT_l = 'amount';
+
 }
