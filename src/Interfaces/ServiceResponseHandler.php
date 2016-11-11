@@ -7,6 +7,8 @@
  */
 namespace Adjutants\Interfaces;
 
+use Symfony\Component\HttpFoundation\Response;
+
 interface ServiceResponseHandler
 {
 
@@ -19,5 +21,10 @@ interface ServiceResponseHandler
      * @return mixed
      */
     public function makeErrorServiceResponse();
+
+    /**
+     * @return Response
+     */
+    public function getResponse();
 
 }
