@@ -11,6 +11,7 @@ use Adjutants\Interfaces\EntitiesHandler;
 use Adjutants\Interfaces\Handler;
 use Adjutants\Interfaces\RequestHandler;
 use Adjutants\Interfaces\ServiceResponseHandler;
+use Symfony\Component\HttpFoundation\Response;
 
 abstract class BaseService implements RequestHandler, ServiceResponseHandler
 {
@@ -19,6 +20,27 @@ abstract class BaseService implements RequestHandler, ServiceResponseHandler
      * @var Handler
      */
     protected $handler;
+
+    /**
+     * @var Response
+     */
+    protected $response;
+
+    /**
+     * @return Response
+     */
+    public function getResponse()
+    {
+        return $this->response;
+    }
+
+    /**
+     * @param Response $response
+     */
+    public function setResponse(Response $response)
+    {
+        $this->response = $response;
+    }
 
     /**
      * @return Handler

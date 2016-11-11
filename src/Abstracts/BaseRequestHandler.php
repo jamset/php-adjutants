@@ -108,7 +108,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
         $response = $this->getResponse();
 
         $response->setStatusCode(HttpConstants::OK_i);
-        $response->setContent(json_encode([AdjutantsConstants::STATUS_l => true]));
+        $response->setContent([AdjutantsConstants::STATUS_l => true]);
 
         return null;
     }
