@@ -7,7 +7,7 @@
  */
 namespace Adjutants\Interfaces;
 
-interface RequestHandler
+interface RequestHandler extends Handler
 {
 
     /**
