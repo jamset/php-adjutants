@@ -13,6 +13,7 @@ use Adjutants\Http\ResponseHandling;
 use Adjutants\Interfaces\RequestHandler;
 use Adjutants\Interfaces\ResponseHandler;
 use Adjutants\Inventory\AdjutantsConstants;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -25,7 +26,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     protected $request;
 
     /**
-     * @var Response
+     * @var JsonResponse
      */
     protected $response;
 
@@ -95,7 +96,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
 
         ResponseHandling::setErrorHttpCode($this->getStatusHttpCode());
         ResponseHandling::setErrorMessage($this->getErrorMessage());
-        $this->getResponse()->setContent(ResponseHandling::formErrorContent());
+        $this->getResponse()->setData(ResponseHandling::formErrorContent());
 
         return null;
     }
@@ -108,14 +109,14 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
         $response = $this->getResponse();
 
         $response->setStatusCode(HttpConstants::OK_i);
-        $response->setContent([AdjutantsConstants::STATUS_l => true]);
+        $response->setData([AdjutantsConstants::STATUS_l => true]);
 
         return null;
     }
 
 
     /**
-     * @return Response
+     * @return JsonResponse
      */
     public function getResponse()
     {
@@ -123,7 +124,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     }
 
     /**
-     * @param Response $response
+     * @param JsonResponse $response
      */
     public function setResponse(Response $response)
     {
