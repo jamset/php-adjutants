@@ -20,6 +20,8 @@ abstract class AdjutantsConstants
         * _dot - dot.case
         *
         * _p - PascalCase
+        * _namespace - 'AppBundle\Service\SomeService\Inventory\SomePath'
+        *
         *
         * _c_m - camelCase, modified (more than one difference from standard camelCase) like Bundle:EntityName
         *
