@@ -27,4 +27,13 @@ class StringsConverter
         return ($string === 'true') ? true : null;
     }
 
+    /**
+     * @param $string
+     * @param $delimiterToReplace
+     * @return float
+     */
+    public static function convertStringToFloat($string, $delimiterToReplace)
+    {
+        return (float) str_replace($delimiterToReplace, ".", $string);
+    }
 }
