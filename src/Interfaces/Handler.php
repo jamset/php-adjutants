@@ -10,4 +10,5 @@ namespace Adjutants\Interfaces;
 interface Handler
 {
 
+
 }

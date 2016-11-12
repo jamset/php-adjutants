@@ -7,13 +7,12 @@
  */
 namespace Adjutants\Abstracts;
 
-use Adjutants\Interfaces\EntitiesHandler;
 use Adjutants\Interfaces\Handler;
-use Adjutants\Interfaces\RequestHandler;
+use Adjutants\Interfaces\ServiceRequestHandler;
 use Adjutants\Interfaces\ServiceResponseHandler;
 use Symfony\Component\HttpFoundation\Response;
 
-abstract class BaseService implements RequestHandler, ServiceResponseHandler
+abstract class BaseService implements ServiceRequestHandler, ServiceResponseHandler
 {
 
     /**
