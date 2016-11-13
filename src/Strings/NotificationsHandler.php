@@ -34,6 +34,6 @@ class NotificationsHandler
      */
     public static function parameterCanNotBeEmpty($parameterName)
     {
-        return AdjutantsConstants::PARAMETER_ucf .'\''.$parameterName.'\''." ".AdjutantsConstants::CAN_NOT_BE_EMPTY_n;
+        return AdjutantsConstants::PARAMETER_ucf .' \''.$parameterName.'\' '.AdjutantsConstants::CAN_NOT_BE_EMPTY_n;
     }
 }
