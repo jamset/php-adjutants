@@ -15,40 +15,41 @@
 что она зависима от более вышестоящих уровней.
 
 Например:
-
-    Abstracts
-    Interfaces
-    Inventory
-    Bundle1/ (для Symfony)
-        Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
-            Abstracts
-            Interfaces
-            Inventory
-                Constants - опционально
-                Exceptions
-            <ServiceName> - уровень "пакета"
+    
+    src/
+        Abstracts
+        Interfaces
+        Inventory
+        Bundle1/ (для Symfony)
+            Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
                 Abstracts
                 Interfaces
                 Inventory
-                    Constants 
+                    Constants - опционально
                     Exceptions
-                SomeHandler.php
-                SomeFactory.php
-                SomeSecondResolver.php
-            <ServiceName>
-                Abstracts
-                Interfaces
-                Inventory
-                    Exceptions
-                OtherHandler.php
-                OtherFirstResolver.php
                 <ServiceName> - уровень "пакета"
                     Abstracts
                     Interfaces
                     Inventory
+                        Constants 
                         Exceptions
-                    NestedHandler.php
-                    NestedFirstResolver.php        
+                    SomeHandler.php
+                    SomeFactory.php
+                    SomeSecondResolver.php
+                <ServiceName>
+                    Abstracts
+                    Interfaces
+                    Inventory
+                        Exceptions
+                    OtherHandler.php
+                    OtherFirstResolver.php
+                    <ServiceName> - уровень "пакета"
+                        Abstracts
+                        Interfaces
+                        Inventory
+                            Exceptions
+                        NestedHandler.php
+                        NestedFirstResolver.php        
                
    
 ###Размещение файлов        
@@ -98,11 +99,18 @@ Helper - класс со статическими методами, относя
 Имена классов сервиса, если они отнаследованы от базовых (абстрактных) классов более вышестоящего уровня, содержат в себе
 часть имени базового класса или соотносятся с ним семантически/категориально.
 
-Cars\
-    Abstracts\BaseCars  (extends BaseService) 
-    CarsHandler.php (extends BaseRequestHandler)
-    HondaHandler.php (extends CarsHandler)
-    EngineResolver.php
-    CarsHelper.php
-    SaveCar.php (extends BaseCars)
-    GetCars.php (extends BaseCars)
+
+    Service\
+        Cars\
+            Abstracts\
+                BaseCars  (extends BaseService) 
+            Inventory\
+                Exceptions\
+                    CarsInvalidArgumentException (extends \Exception)
+                    CarsException (extends \Exception)               
+            CarsHandler.php (extends BaseRequestHandler)
+            EngineResolver.php
+            CarsFactory.php
+            CarsHelper.php
+            SaveCar.php (extends BaseCars)
+            GetCars.php (extends BaseCars)
