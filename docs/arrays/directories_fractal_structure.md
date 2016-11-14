@@ -20,37 +20,30 @@
         Abstracts
         Interfaces
         Inventory
-        Bundle1/ (для Symfony)
-            Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
-                Abstracts
-                Interfaces
-                Inventory
-                    Constants - опционально
-                    Exceptions
-                <ServiceName> - уровень "пакета"
-                    Abstracts
-                    Interfaces
-                    Inventory
-                        Constants 
-                        Exceptions
+        SomeBundle/ 
+            Service/ - папки Abstracts, Interfaces, Inventory - уровень "пакета". Всё, что в <ServiceName> - "пакеты"
+                Abstracts/
+                Interfaces/
+                Inventory/
+                    Constants/ - опционально
+                    Exceptions/                
+                SomeServiceOne/
+                    Abstracts/
+                    Interfaces/
+                    Inventory/
+                        Exceptions/
                     SomeHandler.php
-                    SomeFactory.php
-                    SomeSecondResolver.php
-                <ServiceName>
-                    Abstracts
-                    Interfaces
-                    Inventory
-                        Exceptions
-                    OtherHandler.php
-                    OtherFirstResolver.php
-                    <ServiceName> - уровень "пакета"
-                        Abstracts
-                        Interfaces
-                        Inventory
-                            Exceptions
-                        NestedHandler.php
-                        NestedFirstResolver.php        
-               
+                    SomeResolver.php
+                    
+                    OtherServiceOne/ - при явной необходимости возможно выделение подуровней
+                        Abstracts/
+                        Interfaces/
+                        Inventory/
+                            Exceptions/
+                        OtherHandler.php
+                        OtherResolver.php        
+                SomeServiceTwo/
+                    ...                    
    
 ###Размещение файлов        
         
