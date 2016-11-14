@@ -15,4 +15,9 @@ interface ServiceRequestHandler
      */
     public function handle();
 
+    /**
+     * @return null
+     */
+    public function initializeServiceDto();
+
 }
