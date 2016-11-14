@@ -13,6 +13,7 @@ use Adjutants\Http\ResponseHandling;
 use Adjutants\Interfaces\RequestHandler;
 use Adjutants\Interfaces\ResponseHandler;
 use Adjutants\Inventory\AdjutantsConstants;
+use Monolog\Logger;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -49,6 +50,14 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
      * @return mixed
      */
     public abstract function handle();
+
+    /**
+     * BaseRequestHandler constructor.
+     */
+    public function __construct()
+    {
+        $this->setLogger(new Logger("Without streams"));
+    }
 
     /**
      * {@inheritDoc}
