@@ -7,6 +7,8 @@
  */
 namespace Adjutants\Interfaces;
 
+use Symfony\Component\HttpFoundation\Request;
+
 interface ServiceRequestHandler
 {
 
@@ -18,6 +20,6 @@ interface ServiceRequestHandler
     /**
      * @return null
      */
-    public function initializeServiceDto();
+    public function initializeServiceDto(Request $request);
 
 }
