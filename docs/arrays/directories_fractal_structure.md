@@ -107,7 +107,8 @@ Helper - класс со статическими методами, относя
             Inventory\
                 Exceptions\
                     CarsInvalidArgumentException (extends \Exception)
-                    CarsException (extends \Exception)               
+                    CarsException (extends \Exception)   
+                CarsConstants.php                    
             CarsHandler.php (extends BaseRequestHandler)
             EngineResolver.php
             CarsFactory.php
