@@ -14,45 +14,41 @@
 И каждый уровень - это отдельный уровень конкретизации/абстракции. Нахождение папки глубже/ниже по иерархии означает,
 что она зависима от более вышестоящих уровней.
 
-Например, в Symfony
+Например:
 
-Abstracts
-
-Interfaces
-
-Inventory
-
-Bundle1/
-
-    Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
-        Abstracts
-        Interfaces
-        Inventory
-            Constants - опционально
-            Exceptions
-        <ServiceName> - уровень "пакета"
+    Abstracts
+    Interfaces
+    Inventory
+    Bundle1/ (для Symfony)
+        Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
             Abstracts
             Interfaces
             Inventory
-                Constants 
+                Constants - опционально
                 Exceptions
-            SomeHandler.php
-            SomeFactory.php
-            SomeSecondResolver.php
-        <ServiceName>
-            Abstracts
-            Interfaces
-            Inventory
-                Exceptions
-            OtherHandler.php
-            OtherFirstResolver.php
             <ServiceName> - уровень "пакета"
                 Abstracts
                 Interfaces
                 Inventory
+                    Constants 
                     Exceptions
-                NestedHandler.php
-                NestedFirstResolver.php        
+                SomeHandler.php
+                SomeFactory.php
+                SomeSecondResolver.php
+            <ServiceName>
+                Abstracts
+                Interfaces
+                Inventory
+                    Exceptions
+                OtherHandler.php
+                OtherFirstResolver.php
+                <ServiceName> - уровень "пакета"
+                    Abstracts
+                    Interfaces
+                    Inventory
+                        Exceptions
+                    NestedHandler.php
+                    NestedFirstResolver.php        
                
    
 ###Размещение файлов        
