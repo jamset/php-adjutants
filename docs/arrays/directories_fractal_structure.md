@@ -17,9 +17,13 @@
 Например, в Symfony
 
 Abstracts
+
 Interfaces
+
 Inventory
+
 Bundle1/
+
     Service/ - уровень "пакета", всё, что в <ServiceName> - самостоятельные "пакеты"
         Abstracts
         Interfaces
