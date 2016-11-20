@@ -31,7 +31,7 @@ class BaseScript
     public function getExceptionNotificationMessage(\Exception $e, $notificationId = null)
     {
         return NotificationsHandler::getNotificationString($this->getScriptDesignation(), $notificationId,
-            HandleString::getMainExceptionInfoAsString($e));
+            NotificationsHandler::getMainExceptionInfoAsString($e));
     }
 
     /**

@@ -36,4 +36,14 @@ class NotificationsHandler
     {
         return AdjutantsConstants::PARAMETER_ucf .' \''.$parameterName.'\' '.AdjutantsConstants::CAN_NOT_BE_EMPTY_n;
     }
+
+    /**
+     * @param \Exception $e
+     * @return string
+     */
+    public static function getMainExceptionInfoAsString(\Exception $e)
+    {
+        return $e->getMessage() . "|" . $e->getFile() . "|" . $e->getLine();
+    }
+
 }

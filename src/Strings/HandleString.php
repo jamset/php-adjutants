@@ -9,13 +9,5 @@ namespace Adjutants\Strings;
 
 class HandleString
 {
-    /**
-     * @param \Exception $e
-     * @return string
-     */
-    public static function getMainExceptionInfoAsString(\Exception $e)
-    {
-        return $e->getMessage() . "|" . $e->getFile() . "|" . $e->getLine();
-    }
 
 }
