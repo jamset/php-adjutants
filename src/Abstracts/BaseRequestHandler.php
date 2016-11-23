@@ -10,13 +10,13 @@ namespace Adjutants\Abstracts;
 use Adjutants\Http\Inventory\Constants\HttpConstants;
 use Adjutants\Http\Inventory\Exceptions\RequestInvalidArgumentException;
 use Adjutants\Interfaces\RequestHandler;
-use Adjutants\Interfaces\ResponseHandler;
+use Adjutants\Interfaces\ResultHandler;
 use Adjutants\Inventory\AdjutantsConstants;
 use Doctrine\Common\Collections\ArrayCollection;
 use Monolog\Logger;
 use Symfony\Component\HttpFoundation\Request;
 
-abstract class BaseRequestHandler extends BaseScript implements RequestHandler, ResponseHandler
+abstract class BaseRequestHandler extends BaseScript implements RequestHandler, ResultHandler
 {
 
     /**
@@ -27,7 +27,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     /**
      * @var ArrayCollection
      */
-    protected $response;
+    protected $result;
 
     /**
      * @var bool
@@ -63,7 +63,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
      */
     public function handleRequest()
     {
-        static::initDefaultResponse();
+        static::initDefaultResult();
 
         try {
 
@@ -84,9 +84,9 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
         } finally {
 
             if (!$this->isExceptionExist()) {
-                static::makeSuccessfulResponse();
+                static::makeSuccessfulResult();
             } else {
-                static::makeErrorResponse();
+                static::makeErrorResult();
             }
 
         }
@@ -97,13 +97,13 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     /**
      * @return null
      */
-    protected function initDefaultResponse()
+    protected function initDefaultResult()
     {
-        $defaultResponse = new ArrayCollection();
-        $defaultResponse->set(AdjutantsConstants::STATUS_l, false);
-        $defaultResponse->set(HttpConstants::HTTP_CODE_l, HttpConstants::NOT_FOUND_i);
+        $defaultResult = new ArrayCollection();
+        $defaultResult->set(AdjutantsConstants::STATUS_l, false);
+        $defaultResult->set(HttpConstants::HTTP_CODE_l, HttpConstants::NOT_FOUND_i);
 
-        $this->setResponse($defaultResponse);
+        $this->setResult($defaultResult);
 
         return null;
     }
@@ -176,17 +176,17 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     /**
      * @return ArrayCollection
      */
-    public function getResponse()
+    public function getResult()
     {
-        return $this->response;
+        return $this->result;
     }
 
     /**
-     * @param ArrayCollection $response
+     * @param ArrayCollection $result
      */
-    public function setResponse($response)
+    public function setResult($result)
     {
-        $this->response = $response;
+        $this->result = $result;
     }
 
 

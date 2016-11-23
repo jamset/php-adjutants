@@ -9,10 +9,9 @@ namespace Adjutants\Abstracts;
 
 use Adjutants\Interfaces\Handler;
 use Adjutants\Interfaces\ServiceRequestHandler;
-use Adjutants\Interfaces\ServiceResponseHandler;
-use Symfony\Component\HttpFoundation\Response;
+use Adjutants\Interfaces\ServiceResultHandler;
 
-abstract class BaseService implements ServiceRequestHandler, ServiceResponseHandler
+abstract class BaseService implements ServiceRequestHandler, ServiceResultHandler
 {
 
     /**
@@ -21,24 +20,24 @@ abstract class BaseService implements ServiceRequestHandler, ServiceResponseHand
     protected $handler;
 
     /**
-     * @var Response
+     * @var mixed
      */
-    protected $response;
+    protected $result;
 
     /**
-     * @return Response
+     * @return mixed
      */
-    public function getResponse()
+    public function getResult()
     {
-        return $this->response;
+        return $this->result;
     }
 
     /**
-     * @param Response $response
+     * @param mixed $result
      */
-    public function setResponse(Response $response)
+    public function setResult($result)
     {
-        $this->response = $response;
+        $this->result = $result;
     }
 
     /**

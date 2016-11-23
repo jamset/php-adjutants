@@ -18,37 +18,22 @@ abstract class BaseRestHandler extends BaseRequestHandler
     /**
      * @var JsonResponse
      */
-    protected $response;
+    protected $result;
 
-    /**
-     * @return JsonResponse
-     */
-    public function getResponse()
-    {
-        return $this->response;
-    }
 
-    /**
-     * @param JsonResponse $response
-     */
-    public function setResponse($response)
+    protected function initDefaultResult()
     {
-        $this->response = $response;
-    }
-
-    protected function initDefaultResponse()
-    {
-        $this->setResponse(ResponseHandling::getStandardJsonBadResponse());
+        $this->setResult(ResponseHandling::getStandardJsonBadResponse());
     }
 
     /**
      * @return null
      */
-    public function makeErrorResponse()
+    public function makeErrorResult()
     {
-        $this->getResponse()->setStatusCode($this->getStatusHttpCode());
+        $this->getResult()->setStatusCode($this->getStatusHttpCode());
 
-        $this->getResponse()->setData(
+        $this->getResult()->setData(
             ResponseHandling::makeErrorContent($this->getStatusHttpCode(), $this->getErrorMessage()));
 
         return null;
@@ -57,14 +42,30 @@ abstract class BaseRestHandler extends BaseRequestHandler
     /**
      * @return mixed
      */
-    public function makeSuccessfulResponse()
+    public function makeSuccessfulResult()
     {
-        $response = $this->getResponse();
+        $response = $this->getResult();
 
         $response->setStatusCode(HttpConstants::OK_i);
         $response->setData([AdjutantsConstants::STATUS_l => true]);
 
         return null;
+    }
+
+    /**
+     * @return JsonResponse
+     */
+    public function getResult()
+    {
+        return $this->result;
+    }
+
+    /**
+     * @param JsonResponse $result
+     */
+    public function setResult($result)
+    {
+        $this->result = $result;
     }
 
 
