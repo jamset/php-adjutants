@@ -14,5 +14,7 @@ class HttpConstants
     const BAD_REQUEST_i = 400;
     const responseText_c = 'responseText';
 
+    const HTTP_CODE_l = 'http_code';
+
 
 }

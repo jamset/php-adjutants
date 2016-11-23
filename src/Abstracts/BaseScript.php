@@ -7,7 +7,6 @@
  */
 namespace Adjutants\Abstracts;
 
-use Adjutants\Strings\HandleString;
 use Adjutants\Strings\NotificationsHandler;
 use Monolog\Logger;
 

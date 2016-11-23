@@ -90,5 +90,6 @@ abstract class AdjutantsConstants
     const AMOUNT_l = 'amount';
     const EXCHANGE_RATE_c = 'exchangeRate';
     const PARAMETER_ucf = 'Parameter';
+    const HTTP_CODE_l = 'http_code';
 
 }

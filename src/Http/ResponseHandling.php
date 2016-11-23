@@ -39,7 +39,7 @@ class ResponseHandling
     /**
      * @return array
      */
-    public static function formErrorContent()
+    public static function makeErrorContent($httpCode, $errorMessage)
     {
         $errorContent = [
             AdjutantsConstants::STATUS_l => false,

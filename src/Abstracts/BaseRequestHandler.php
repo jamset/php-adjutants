@@ -9,14 +9,12 @@ namespace Adjutants\Abstracts;
 
 use Adjutants\Http\Inventory\Constants\HttpConstants;
 use Adjutants\Http\Inventory\Exceptions\RequestInvalidArgumentException;
-use Adjutants\Http\ResponseHandling;
 use Adjutants\Interfaces\RequestHandler;
 use Adjutants\Interfaces\ResponseHandler;
 use Adjutants\Inventory\AdjutantsConstants;
+use Doctrine\Common\Collections\ArrayCollection;
 use Monolog\Logger;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 
 abstract class BaseRequestHandler extends BaseScript implements RequestHandler, ResponseHandler
 {
@@ -27,7 +25,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     protected $request;
 
     /**
-     * @var JsonResponse
+     * @var ArrayCollection
      */
     protected $response;
 
@@ -65,7 +63,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
      */
     public function handleRequest()
     {
-        $this->setResponse(ResponseHandling::getStandardJsonBadResponse());
+        static::initDefaultResponse();
 
         try {
 
@@ -88,7 +86,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
             if (!$this->isExceptionExist()) {
                 static::makeSuccessfulResponse();
             } else {
-                $this->makeErrorResponse();
+                static::makeErrorResponse();
             }
 
         }
@@ -99,45 +97,15 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     /**
      * @return null
      */
-    public function makeErrorResponse()
+    protected function initDefaultResponse()
     {
-        $this->getResponse()->setStatusCode($this->getStatusHttpCode());
+        $defaultResponse = new ArrayCollection();
+        $defaultResponse->set(AdjutantsConstants::STATUS_l, false);
+        $defaultResponse->set(HttpConstants::HTTP_CODE_l, HttpConstants::NOT_FOUND_i);
 
-        ResponseHandling::setErrorHttpCode($this->getStatusHttpCode());
-        ResponseHandling::setErrorMessage($this->getErrorMessage());
-        $this->getResponse()->setData(ResponseHandling::formErrorContent());
+        $this->setResponse($defaultResponse);
 
         return null;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function makeSuccessfulResponse()
-    {
-        $response = $this->getResponse();
-
-        $response->setStatusCode(HttpConstants::OK_i);
-        $response->setData([AdjutantsConstants::STATUS_l => true]);
-
-        return null;
-    }
-
-
-    /**
-     * @return JsonResponse
-     */
-    public function getResponse()
-    {
-        return $this->response;
-    }
-
-    /**
-     * @param JsonResponse $response
-     */
-    public function setResponse(Response $response)
-    {
-        $this->response = $response;
     }
 
     /**
@@ -203,6 +171,22 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     public function setErrorMessage($errorMessage)
     {
         $this->errorMessage = $errorMessage;
+    }
+
+    /**
+     * @return ArrayCollection
+     */
+    public function getResponse()
+    {
+        return $this->response;
+    }
+
+    /**
+     * @param ArrayCollection $response
+     */
+    public function setResponse($response)
+    {
+        $this->response = $response;
     }
 
 
