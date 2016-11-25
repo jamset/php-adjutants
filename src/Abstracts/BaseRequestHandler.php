@@ -99,11 +99,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
      */
     protected function initDefaultResult()
     {
-        $defaultResult = new ArrayCollection();
-        $defaultResult->set(AdjutantsConstants::STATUS_l, false);
-        $defaultResult->set(HttpConstants::HTTP_CODE_l, HttpConstants::NOT_FOUND_i);
-
-        $this->setResult($defaultResult);
+        $this->setResult(new ArrayCollection());
 
         return null;
     }
