@@ -14,6 +14,7 @@ use Adjutants\Interfaces\ResultHandler;
 use Adjutants\Inventory\AdjutantsConstants;
 use Doctrine\Common\Collections\ArrayCollection;
 use Monolog\Logger;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 
 abstract class BaseRequestHandler extends BaseScript implements RequestHandler, ResultHandler
@@ -170,7 +171,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     }
 
     /**
-     * @return ArrayCollection
+     * @return ArrayCollection|JsonResponse
      */
     public function getResult()
     {
@@ -178,7 +179,7 @@ abstract class BaseRequestHandler extends BaseScript implements RequestHandler, 
     }
 
     /**
-     * @param ArrayCollection $result
+     * @param ArrayCollection|JsonResponse $result
      */
     public function setResult($result)
     {
