@@ -1,9 +1,9 @@
-#Adjutants
+# Adjutants
 PHP Handlers for specific purposes: handling arrays, objects, strings, etc.
 
 E.g. for arrays: you can group data around certain properties, sort data and detect most frequent values, add up data by properties, etc.
 
-###Composer installation
+### Composer installation
 
 ```json
 "require": {
@@ -16,7 +16,7 @@ or you may execute
 
 Please, note that package stability is dev.
 
-###Arrays
+### Arrays
 You can: 
 
 - Group data by certain criterias by Group class. [Read more](docs/arrays/Group.md)
